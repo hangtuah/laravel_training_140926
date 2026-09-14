@@ -1,0 +1,361 @@
+Saya sedang membina projek latihan Laravel bertemakan:
+
+"Sistem Tempahan Bilik Perbincangan"
+
+Konteks sistem:
+- Sistem digunakan oleh pelajar untuk melihat dan menempah bilik perbincangan / bilik mesyuarat dalam sebuah bangunan.
+- Sistem mempunyai dua modul utama:
+  1. Rooms
+  2. Bookings
+- Sistem nanti akan mempunyai calendar view untuk melihat tempahan.
+- Buat masa ini saya mahu siapkan LANDING PAGE sahaja.
+- Landing page ini akan menggantikan fail asal Laravel:
+  resources/views/welcome.blade.php
+
+TUGAS ANDA:
+
+Hasilkan SATU fail Blade lengkap untuk:
+
+resources/views/welcome.blade.php
+
+Saya mahu saya boleh terus copy-paste keseluruhan hasil tersebut ke dalam fail welcome.blade.php dan buka melalui Laravel tanpa perlu pecahkan kepada component atau fail lain.
+
+==================================================
+DESIGN DIRECTION
+==================================================
+
+Bina landing page yang:
+
+- Modern
+- Professional
+- Clean
+- Premium looking
+- Sesuai untuk sistem universiti / pelajar
+- Tidak nampak seperti default Laravel
+- Tidak nampak seperti template admin dashboard
+- Tidak terlalu corporate
+- Tidak terlalu banyak warna
+- Responsive untuk desktop, tablet dan mobile
+
+Gunakan gaya visual yang kemas dengan:
+- whitespace yang baik
+- typography yang professional
+- rounded card
+- subtle shadow
+- gradient yang sangat minimal jika sesuai
+- icon yang konsisten
+- hover transition yang smooth
+- layout yang kemas dan tidak sesak
+
+Gunakan warna utama seperti:
+- Navy / deep blue
+- Blue
+- White
+- Light gray
+
+Boleh gunakan sedikit accent cyan / indigo jika sesuai.
+
+==================================================
+TECHNICAL REQUIREMENT
+==================================================
+
+Gunakan:
+
+- Laravel Blade
+- HTML5
+- Tailwind CSS melalui CDN
+- Alpine.js melalui CDN jika perlu sahaja
+- Lucide Icons atau Font Awesome melalui CDN jika perlu
+
+JANGAN gunakan:
+- React
+- Vue
+- npm package
+- Vite dependency tambahan
+- custom component
+- external Blade partial
+- database query
+- controller data
+
+Semua perlu berada dalam SATU fail welcome.blade.php.
+
+Pastikan page boleh berjalan walaupun route hanya:
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+==================================================
+LANDING PAGE STRUCTURE
+==================================================
+
+Bina sekurang-kurangnya bahagian berikut:
+
+1. NAVBAR
+
+Navbar yang simple dan modern.
+
+Sebelah kiri:
+- Logo/icon ringkas
+- Nama sistem:
+  "RoomBook"
+
+Subtitle kecil jika sesuai:
+"Discussion Room Booking"
+
+Sebelah kanan:
+- Home
+- Rooms
+- Schedule
+- How It Works
+
+Sediakan button utama:
+"Book a Room"
+
+Buat anchor navigation ke section landing page sahaja buat masa ini.
+
+Navbar boleh sticky apabila scroll jika sesuai.
+
+==================================================
+
+2. HERO SECTION
+
+Hero perlu jadi bahagian paling menarik.
+
+Headline cadangan:
+
+"Find a Room.
+Book Your Space."
+
+atau hasilkan headline yang lebih professional tetapi ringkas.
+
+Subheadline perlu menerangkan bahawa pelajar boleh:
+- mencari bilik
+- menyemak availability
+- membuat tempahan
+
+Sediakan dua CTA:
+
+Primary:
+"Book a Room"
+
+Secondary:
+"View Schedule"
+
+Di bahagian kanan hero, jangan sekadar letak gambar stock.
+
+Bina visual UI mockup menggunakan HTML/CSS seperti:
+- mini booking card
+- calendar preview
+- room availability card
+
+Contoh kandungan mockup:
+
+Discussion Room 02
+Level 2
+Capacity: 8
+
+Today
+10:00 AM - 12:00 PM  Booked
+12:00 PM - 02:00 PM  Available
+02:00 PM - 04:00 PM  Available
+
+Pastikan mockup nampak seperti UI sistem sebenar.
+
+==================================================
+
+3. QUICK AVAILABILITY / SEARCH SECTION
+
+Buat satu card besar seperti booking search form.
+
+Field:
+- Date
+- Start Time
+- End Time
+- Number of Participants
+
+Button:
+"Check Availability"
+
+Untuk sekarang form tidak perlu submit ke backend.
+
+Gunakan HTML form sahaja.
+
+Pastikan section ini nampak sebagai feature utama sistem.
+
+==================================================
+
+4. AVAILABLE ROOMS SECTION
+
+Tunjukkan sekurang-kurangnya 3 contoh bilik.
+
+Contoh:
+
+Discussion Room 01
+Level 1
+Capacity 6
+Whiteboard
+Display
+
+Discussion Room 02
+Level 2
+Capacity 8
+Smart TV
+Whiteboard
+
+Meeting Room A
+Level 3
+Capacity 12
+Projector
+Video Conference
+
+Setiap card perlu ada:
+- icon / visual
+- nama bilik
+- lokasi
+- capacity
+- facilities
+- status seperti "Available"
+- button "View Room"
+
+Gunakan dummy data sahaja.
+
+==================================================
+
+5. SCHEDULE / CALENDAR PREVIEW
+
+Buat satu section yang menyerupai calendar / schedule.
+
+Tidak perlu integrate FullCalendar lagi.
+
+Gunakan HTML/CSS untuk menghasilkan mock calendar view.
+
+Contoh:
+
+Mon
+Tue
+Wed
+Thu
+Fri
+
+Dan beberapa event kecil seperti:
+
+10:00
+Discussion Room 01
+
+14:00
+Meeting Room A
+
+Tujuan section ini ialah untuk menunjukkan bahawa sistem nanti mempunyai calendar view.
+
+Sediakan CTA:
+"View Full Schedule"
+
+==================================================
+
+6. HOW IT WORKS
+
+Buat 3 step sahaja.
+
+Step 1:
+Choose a Room
+
+Step 2:
+Select Date & Time
+
+Step 3:
+Confirm Booking
+
+Gunakan icon dan nombor step.
+
+Jangan tulis description terlalu panjang.
+
+==================================================
+
+7. FEATURE / BENEFIT SECTION
+
+Buat beberapa point ringkas seperti:
+
+- Real-time Availability
+- Easy Booking
+- Clear Schedule
+- Room Information
+
+Gunakan icon.
+
+Pastikan section tidak terlalu besar.
+
+==================================================
+
+8. CALL TO ACTION
+
+Sebelum footer, buat CTA section yang menarik.
+
+Contoh headline:
+
+"Need a space for your next discussion?"
+
+Button:
+"Find a Room"
+
+==================================================
+
+9. FOOTER
+
+Footer simple.
+
+Contoh:
+
+RoomBook
+Discussion Room Booking System
+
+© 2026 RoomBook. All rights reserved.
+
+Sediakan beberapa dummy link:
+- Rooms
+- Schedule
+- Booking Guide
+
+==================================================
+UX REQUIREMENT
+==================================================
+
+Pastikan:
+
+- Mobile responsive
+- Navbar mobile-friendly
+- Button states jelas
+- Hover effects subtle
+- Contrast text baik
+- Jangan terlalu banyak animation
+- Jangan terlalu banyak gradient
+- Jangan gunakan emoji sebagai icon
+- Jangan gunakan lorem ipsum
+- Semua copywriting nampak seperti production application
+- Jangan terlalu panjang
+- Elakkan design yang nampak seperti AI-generated generic landing page
+
+==================================================
+IMPORTANT
+==================================================
+
+Saya mahukan hasil akhir dalam bentuk KOD PENUH sahaja.
+
+Jangan:
+- explain code
+- beri tutorial
+- beri pseudocode
+- pecahkan kepada banyak file
+- cadangkan architecture lain
+
+Terus hasilkan keseluruhan kandungan:
+
+resources/views/welcome.blade.php
+
+Pastikan bermula dengan:
+
+<!DOCTYPE html>
+
+dan berakhir dengan:
+
+</html>
