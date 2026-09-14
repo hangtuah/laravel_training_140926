@@ -1,0 +1,34 @@
+phpMyAdmin: https://db-training.fairus.vip/
+MySQL host: mysql-training.fairus.vip
+Port: 3306; SSL/TLS required; use training-ca.pem with VERIFY_IDENTITY.
+Share only each participant own credentials.
+
+Fairus
+Username: student01
+Database: training01
+Password: 15a572f2e2adce3ac946aeded9fbdd3be98fd0a17e1da2f0d275e6b0a2a0ed76
+
+Zihan
+Username: student02
+Database: training02
+Password: 077107acb6999dade1558a03d99f5fccf45bb158a3bc75abae87c116b68be89d
+
+Haziq
+Username: student03
+Database: training03
+Password: 8b0a929eae282e123bafd4f6979aa701abd49ece811f0a46fe9055b262680d16
+
+Firas
+Username: student04
+Database: training04
+Password: 5c56fe38f4b94737c822aec1916438ef0854647b387df606275a87339830c2f7
+
+Irfan
+Username: student05
+Database: training05
+Password: 6413cfb0a9bf826ff05e6c933d382b30925999dc7df4034e172e76a63830a6de
+
+Faizah
+Username: student06
+Database: training06
+Password: 1b6e397bef7ff5e73913da55998eb78886e67f0165726810ff0f05ead58b406b
